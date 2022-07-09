@@ -1,4 +1,10 @@
+document.getElementById("texsti"); innerHTML = "BREEF PEAKS BEYOND"
 
+document.write("Hello Nina!");
+
+console.log("Nina hello console log")
+
+window.alert("Pleace, accept the coockies");
 const menuToggle = document.querySelector('.toggle');
 const showcase = document.querySelector('.showcase');
 
