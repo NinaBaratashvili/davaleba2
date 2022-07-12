@@ -11,6 +11,8 @@
   padding-top: 100%;
   padding-bottom: 0x;
   background-size: cover;
+  margin: auto;
+  padding: auto;
 }
 header{
   position: absolute;
@@ -183,6 +185,7 @@ body{
   justify-content: right;
   align-items: right;
   display: flex;
+  margin-top: 5px;
 }
 .menu ul
 {
