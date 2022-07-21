@@ -68,6 +68,15 @@ header .logo{
 .showcase.active{
   right: 700px;
 }
+.showcase image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 10;
+}
 
 .overlay
 {
@@ -77,7 +86,7 @@ header .logo{
   width: 100%;
   height: 100%;
   background: #03a9f4;
-  mix-blend-mode: overlay;
+  mix-blend-mode: overlay; 
 }
 .text
 {
@@ -158,21 +167,28 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* 
+/* */ 
 .register{
-  width: 400px;
-  margin: 50px auto;
+  width: 174px;
+  margin: -18px auto;
+  position: relative;
+  align-items: flex-end;
+
 }
 .register input{
   width: auto;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 14px ;
+  margin-bottom: 17px;
+  position: relative;
+  align-items: center;
+  
+
 }
-*/ 
+
 
 .social li a:hover
 {
-  transform: scale(0.5) translateY(-15px);
+  transform: scale(0.3) translateY(+25px);
 }
 .menu
 {
@@ -216,7 +232,7 @@ body{
 
 @media (max-width: 991px){
   .showcase, .showcase header{
-    padding: 10px;
+    padding: 40px;
   }
   
   .text h2{
@@ -246,4 +262,154 @@ body{
   position: fixed;
   padding: min(20vh, 10rem) 2em;
   
+}
+
+/*
+.ruka{
+  margin: 0 auto;
+}
+.owl-theme .owl-nav{
+  position: absolute;
+  top:80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.owl-theme .owl-nav [class*=owl-]{
+  font-size: 60px!important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover{
+  background: rgba(0, 0, 0, 0);
+  color: #555;
+}
+
+*/
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #877e7e;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: rgb(117, 110, 110);
+}
+
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #908686;
+  resize: none;
+  min-height: 200px;
+}
+
+
+.form-container textarea:focus {
+  background-color: rgba(62, 81, 38, 0.675);
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: rgb(155, 151, 151);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.open-button {
+  background-color: rgb(152, 59, 35);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 2px;
+  right: 2px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.map{
+  margin: 0 auto;
+
 }
